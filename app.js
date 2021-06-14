@@ -15,7 +15,7 @@ function userInteraction(){
     rockButton.addEventListener("click", getSelectionUser);
     paperButton.addEventListener("click", getSelectionUser);
     scissorsButton.addEventListener("click", getSelectionUser);
-    endGame.addEventListener("click", endGameQuestion);
+    endGame.addEventListener("click", endGameRegards);
 }
 
 userInteraction();
@@ -59,17 +59,12 @@ function game(){
 
 }
 
-function endGameQuestion() {
-    let gameUserContinue = prompt("Seguro? s/n ");
-
-    if (gameUserContinue == "s"){
+function endGameRegards() {
         console.log("Bye");
         console.log(" ");
 
         document.getElementById("game").innerHTML = "GoodBye!";
-    } else{
-        userInteraction;
-    }
+
 }
 
 

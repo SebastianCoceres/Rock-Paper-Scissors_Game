@@ -61,14 +61,15 @@ main {
     font-size: 10rem;
 }
 
-#game{
+#game {
     position: absolute;
     top: 50%;
+    transform: translateY(-25%);
     text-align: center;
     font-size: 3rem;
 }
 
-.options{
+.options {
     width: 100%;
     height: 30vh;
     display: flex;
@@ -78,35 +79,35 @@ main {
     flex-wrap: wrap;
 }
 
-.options div{
+.options div {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.options input{
+.options input {
     font-size: 2rem;
     width: 10rem;
     padding: 2rem;
     margin: 1.5rem;
-    border: 0.5px solid rgba(0,0,0,0.1);
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
     border-radius: 3rem;
     background-color: transparent;
     box-shadow: inset 8px 8px 16px #bebebe,
-                inset -8px -8px 16px #ffffff;
+        inset -8px -8px 16px #ffffff;
     outline: none;
 }
 
-.options input:hover{
+.options input:hover {
     background-color: var(--main-color);
 }
 
-.options input:active{
+.options input:active {
     border: inset;
 }
 
-.options #endGame{
+.options #endGame {
     width: 30rem;
     text-align: center;
     background-color: var(--endgame-color);
@@ -119,7 +120,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     background-color: var(--dark-color);
-    
+
 }
 
 footer .nav-logo_container a {
@@ -173,15 +174,41 @@ footer .animate-flicker {
     font-size: 1.5rem;
 }
 
-.footer__nav li a{
+.footer__nav li a {
     color: var(--clear-color);
 }
 
-.footer__nav li a:hover{
+.footer__nav li a:hover {
     color: var(--main-color);
 }
 
-@media (min-width: 768px){
-    
-}
+@media (min-width: 768px) {
+    header h1 {
+        font-size: 3rem;
+    }
 
+    .rightHand,
+    .leftHand {
+        font-size: 20rem;
+    }
+
+    #game {
+        font-size: 5rem;
+    }
+
+    .options input{
+        font-size: 5rem;
+    }
+
+    .options #endGame {
+        font-size: 3rem;
+    }
+
+    footer .nav-logo_container a{
+        font-size: 3rem;
+    }
+
+    .footer__nav li{
+        font-size: 2rem;
+    }
+}
