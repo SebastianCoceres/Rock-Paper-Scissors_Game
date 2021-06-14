@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper and Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Rock, Paper and Scissors</h1>
+    </header>
+    <main>
+        <div class=hands>
+            <div>
+                <h3>User Choice</h3>
+                <div class="rightHand" id="rightHand">
+                    ✊
+                </div>
+            </div>
+            <div>
+                <h3>PC Choice</h3>
+                <div class="leftHand" id="leftHand">
+                    ✊
+                </div>
+            </div>
+
+        </div>
+        <div class="options">
+            <div>
+                <input type="button" id="Rock" name="rock" value="✊">
+                <input type="button" id="Paper" name="paper" value="✋">
+                <input type="button" id="Scissors" name="scissors" value="✌">
+            </div>
+
+            <div>
+                <input id="endGame" value="¿End Game?"></input>
+            </div>
+        </div>
+
+        <div id="game">
+
+        </div>
+    </main>
+    <footer>
+        <section class="nav-logo_container">
+            <a href=""><span class="goldLetter">C</span>S<span class="goldLetter">_</span>Code<span
+                    class="animate-flicker">|</span></a>
+        </section>
+        <section>
+            <ul class="footer__nav">
+                <li class="footer__nav--item"><a href="https://github.com/SebastianCoceres" target="blank">Github</a></li>
+                <li class="footer__nav--item"><a href="https://sebastiancoceres.github.io/index.html"  target="blank">My CV</a></li>
+            </ul>
+        </section>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
