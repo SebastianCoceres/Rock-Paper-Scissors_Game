@@ -61,12 +61,18 @@ main {
     font-size: 10rem;
 }
 
+#scoreGame{
+    font-size: 1.6rem;
+    position: absolute;
+    top: 40%;
+}
+
 #game {
     position: absolute;
     top: 50%;
     transform: translateY(-25%);
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .options {
@@ -90,7 +96,7 @@ main {
     font-size: 2rem;
     width: 10rem;
     padding: 2rem;
-    margin: 1.5rem;
+    margin: 0 1.5rem;
     border: 0.5px solid rgba(0, 0, 0, 0.1);
     border-radius: 3rem;
     background-color: transparent;
@@ -108,9 +114,15 @@ main {
 }
 
 .options #endGame {
-    width: 30rem;
+    width: 50%;
+    padding: 1rem;
     text-align: center;
     background-color: var(--endgame-color);
+    box-shadow: inset 3px 3px 12px #ff2c2c,
+                inset -3px -3px 12px #a83131;
+    font-size: 1.4rem;
+    color: var(--secondary-color);
+    max-width: 30rem;
 }
 
 footer {
@@ -189,15 +201,15 @@ footer .animate-flicker {
 
     .rightHand,
     .leftHand {
-        font-size: 20rem;
+        font-size: 15rem;
     }
 
     #game {
-        font-size: 5rem;
+        font-size: 3rem;
     }
 
     .options input{
-        font-size: 5rem;
+        font-size: 2rem;
     }
 
     .options #endGame {
@@ -205,10 +217,55 @@ footer .animate-flicker {
     }
 
     footer .nav-logo_container a{
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .footer__nav li{
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-height: 450px){
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    .rightHand,
+    .leftHand {
+        font-size: 8rem;
+    }
+
+    #game {
+        font-size: 1.6rem;
+    }
+
+    .options input{
+        font-size: 1.4rem;
+        padding: 1rem;
+        width: 6rem;
+    }
+
+    .options #endGame {
+        font-size: 1.4rem;
+        max-width: 15rem;
+    }
+}
+
+
+@media (min-height:450px) and (max-height: 600px) {
+    .rightHand,
+    .leftHand {
+        font-size: 10rem;
+    }
+
+    .options input{
+        font-size: 1.8rem;
+        padding: 1rem;
+        width: 6rem;
+    }
+
+    .options #endGame {
         font-size: 2rem;
+        max-width: 20rem;
     }
 }
